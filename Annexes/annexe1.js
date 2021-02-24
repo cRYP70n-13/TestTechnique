@@ -1,24 +1,34 @@
 const FirstAnnexeSolution = (str, nbr) => {
-	checkValidNumber(nbr);
-	checkString(str);
+	const validNum = checkValidNumber(nbr);
+	const validStr = checkString(str);
 
-	const strLength = str.length;
-	return (strLength / nbr);
+	if (validNum === nbr && validStr === str && str !== undefined) {
+		const strLength = str.length;
+		return (strLength / nbr);
+	} else {
+		return
+	}
 }
 
 const checkValidNumber = (nbr) => {
 	if (isNaN(nbr) || !nbr) {
-		return "Sorry !! The number should be of type Number";
+		return
 	}
 	if (nbr < 0 || nbr > 20) {
-		return "Sorry the number should be between 0 and 20";
+		return
 	}
+	return nbr;
 }
 
 const checkString = (str) => {
 	if (!str) {
-		return "Sorry the string is mandatory";
+		return
 	}
+	return str;
 }
 
-console.log(FirstAnnexeSolution("Hi", "32"));
+module.exports = {
+	FirstAnnexeSolution,
+	checkString,
+	checkValidNumber
+}
