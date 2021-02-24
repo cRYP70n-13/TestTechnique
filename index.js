@@ -1,4 +1,5 @@
 const express = require('express');
+
 const firstAnnexe = require('./routes/firstAnnexe.routes');
 const secondAnnexe = require('./routes/secondAnnexe.routes');
 
@@ -11,6 +12,5 @@ const PORT = process.env.PORT || 3000;
 
 app.use('/api/p1', firstAnnexe);
 app.use('/api/p2', secondAnnexe);
-
 
 app.listen(PORT, () => console.log(`Its up and running on localhost:${PORT}`));
