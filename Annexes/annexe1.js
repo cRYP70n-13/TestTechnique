@@ -11,12 +11,12 @@ const FirstAnnexeSolution = (str, nbr) => {
 }
 
 const checkValidNumber = (nbr) => {
-	if (isNaN(nbr) || !nbr) {
+	if (isNaN(nbr) || !nbr)
 		return
-	}
-	if (nbr < 0 || nbr > 20) {
+
+	if (nbr < 0 || nbr > 20)
 		return
-	}
+
 	return nbr;
 }
 

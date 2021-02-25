@@ -19,6 +19,6 @@ router.get('/', (req, res, next) => {
 			message: 'Sorry, you have an error in yout dates'
 		});
 	}
-})
+});
 
 module.exports = router;
