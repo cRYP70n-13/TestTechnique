@@ -28,7 +28,5 @@ const checkString = (str) => {
 }
 
 module.exports = {
-	FirstAnnexeSolution,
-	checkString,
-	checkValidNumber
+	FirstAnnexeSolution
 }
