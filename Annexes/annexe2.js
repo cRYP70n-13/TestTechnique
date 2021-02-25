@@ -25,15 +25,12 @@ const SecondAnnexeSolution = (date_start, date_end) => {
 		const timeDifference = (firstDate.day - 1) + (secondMonthDays - secondDate.day);
 
 		return timeDifference;
-	} else {
-		return -1
 	}
+	return -1
 }
 
 // Check if the given date is valid
-const checkDate = date => {
-	return moment(date, 'YYYY-MM-DD').isValid();
-}
+const checkDate = date => moment(date, 'YYYY-MM-DD').isValid();
 
 const getInfo = date => (date).split('-');
 
